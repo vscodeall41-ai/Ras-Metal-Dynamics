@@ -74,6 +74,22 @@ export default function AboutPage() {
         </div>
       </Section>
 
+      {/* Dramatic Brand Mark */}
+      <Section>
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="mb-8">
+            <img 
+              src="/images/logo-dramatic.png" 
+              alt="Ras Metal Dynamics brand mark" 
+              className="mx-auto max-h-[220px] w-auto"
+            />
+          </div>
+          <p className="text-lg text-[#C5C5C5]">
+            The mark represents strength forged under pressure — the core of what we build.
+          </p>
+        </div>
+      </Section>
+
       <Section>
         <CTA title="Want to work with us?" subtitle="Whether it’s a new build, renovation, or industrial project — we’re ready to discuss the details." />
       </Section>

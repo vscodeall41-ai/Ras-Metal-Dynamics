@@ -7,12 +7,17 @@ import { CTA } from "@/components/CTA";
 export default function Home() {
   return (
     <>
-      {/* Hero - Matching provided design */}
-      <div className="relative min-h-[100vh] flex items-center justify-center border-b border-[#262626] bg-[#0A0A0A] overflow-hidden">
-        {/* Subtle dot pattern background like the reference */}
-        <div className="absolute inset-0 bg-[radial-gradient(#262626_0.7px,transparent_1px)] bg-[length:3px_3px]" />
-
-        <div className="relative max-w-4xl mx-auto px-6 text-center pt-12 pb-16">
+      {/* Hero - Dramatic industrial style (matching your second reference) */}
+      <div 
+        className="relative min-h-[100vh] flex items-center justify-center border-b border-[#262626] bg-[#0A0A0A] overflow-hidden"
+        style={{
+          backgroundImage: `linear-gradient(to right, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.75) 45%, rgba(10,10,10,0.35) 65%, rgba(10,10,10,0.15) 80%), url('/images/hero-industrial.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center right',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="relative max-w-4xl mx-auto px-6 text-center md:text-left pt-12 pb-16">
           {/* Top badge */}
           <div className="inline-block px-5 py-1.5 rounded-full bg-[#C53030]/10 text-[#C53030] text-xs tracking-[1.5px] font-medium mb-8">
             CAPE TOWN • B-BBEE LEVEL 4
@@ -24,13 +29,13 @@ export default function Home() {
           </h1>
 
           {/* Subtitle */}
-          <p className="max-w-[620px] mx-auto text-[17px] md:text-[19px] text-[#A3A3A3] tracking-[-0.01em] leading-relaxed mb-10">
+          <p className="max-w-[620px] mx-auto md:mx-0 text-[17px] md:text-[19px] text-[#A3A3A3] tracking-[-0.01em] leading-relaxed mb-10">
             Precision custom steel fabrication for architectural, structural,<br className="hidden md:block" />
             and industrial projects that demand quality.
           </p>
 
           {/* Buttons - matching reference style */}
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
             <Button 
               href="/contact" 
               variant="primary" 

@@ -11,8 +11,8 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#262626] bg-[#0A0A0A]/95 backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
-        <Link href="/" className="flex items-center" onClick={() => setMobileOpen(false)}>
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between py-5">
+        <Link href="/" className="flex items-center pt-1" onClick={() => setMobileOpen(false)}>
           <Logo />
         </Link>
 
